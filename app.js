@@ -212,10 +212,10 @@
         <a class="pcard p-${a.platform.toLowerCase()}" ${ext(a.url)} data-reveal>
           <div class="pcard-top">${icon(a.platform)}<span>${esc(a.platform)}</span><em>${esc(a.role)}</em></div>
           <div class="pcard-profile">
-            ${a.avatar ? `<img src="${esc(a.avatar)}" alt="" loading="lazy">` : ""}
-            <span class="pcard-handle">${esc(a.handle)}</span>
+            ${a.avatar ? `<img src="${esc(a.avatar)}" alt="" loading="lazy"${a.avatarIsLogo ? ` class="is-logo"` : ""}>` : ""}
+            <span class="pcard-handle">${esc(a.handle).replace(/\./g, "<wbr>.")}</span>
           </div>
-          <div class="pcard-big"><b>${compact(a.followers)}</b><span>followers</span></div>
+          <div class="pcard-big"><b>${compact(a.followers)}</b><span>${a.followers === 1 ? "follower" : "followers"}</span></div>
           <dl class="pcard-stats">
             ${[["Views", a.views], ["Likes", a.likes], ["Comments", a.comments], [a.platform === "TikTok" ? "Videos" : "Posts", a.posts]]
               .filter(([, v]) => v != null).slice(0, 3)
@@ -227,11 +227,15 @@
 
       <div class="mk-h" data-reveal><h2>Brands I've worked with</h2></div>
       <div class="mk-brands">${K.brands.map(b => `
-        <article class="bcard${b.theme ? " branded" : ""}" ${brandStyle(b.theme)} data-reveal>
+        <article class="bcard${b.theme ? " branded" : ""}${b.theme && b.theme.light ? " light" : ""}" ${brandStyle(b.theme)} data-reveal>
           <div class="bcard-logo">${brandMark(b)}</div>
           <div class="bcard-body">
             <div class="bcard-head"><h3>${esc(b.name)}</h3><span class="pill">${esc(b.role)}</span></div>
             <p>${esc(b.what)}</p>
+            ${b.stats ? `
+              <dl class="bcard-stats">${Object.entries(b.stats).map(([k, v]) =>
+                `<div><dt>${esc(k)}</dt><dd>${compact(v)}</dd></div>`).join("")}</dl>
+              ${b.statsNote ? `<p class="bcard-note">${esc(b.statsNote)}</p>` : ""}` : ""}
             <div class="bcard-foot"><span>${esc(b.when)}</span>${b.links.map(([l, u]) => `<a ${ext(u)}>${esc(l)} ↗</a>`).join("")}</div>
           </div>
         </article>`).join("")}

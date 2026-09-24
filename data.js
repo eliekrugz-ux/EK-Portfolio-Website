@@ -31,23 +31,40 @@ window.SITE = {
     niches: ["Lifestyle", "Fashion", "Travel", "Finance & fintech", "Startups", "NYC"],
     statsAsOf: "Sept 2026",
     // Per-account numbers, added up from each public post on the date in `statsAsOf`.
-    // Instagram doesn't show views or saves publicly, so those are TikTok only.
     // Instagram likes/comments cover the posts visible to the public (12 of 19 on @eliemmos).
+    // TikTok numbers were confirmed from Elie's screenshots on 2026-09-24.
     accounts: [
+      // Views are the 4 reels (515K + 17.9K + 16.8K + 2,009); likes/comments add the reels to the 12 public photo posts.
+      // Shares include reposts (15.7K + 1,160, 708 + 30, 134 + 13). From Elie's screenshots, 2026-09-24.
       { platform: "Instagram", handle: "@eliemmos", role: "Main", url: "https://www.instagram.com/eliemmos/", avatar: "avatars/profile.jpg",
-        followers: 645, posts: 19, likes: 1376, comments: 356 },
+        followers: 646, posts: 19, views: 551709, likes: 30786, comments: 765, shares: 17745, saves: 1564 },
       { platform: "TikTok", handle: "@eliemmos", role: "Main", url: "https://www.tiktok.com/@eliemmos", avatar: "avatars/profile.jpg",
-        followers: 313, posts: 3, views: 137377, likes: 18919, comments: 224, shares: 3218, saves: 817 },
+        followers: 313, posts: 3, views: 137379, likes: 18924, comments: 224, shares: 3218, saves: 817 },
+      // Whole account: "How executives become successful" (920 views) + the Onsen Retreat reel (3,565). Shares include reposts.
       { platform: "Instagram", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.instagram.com/eliemmos.mp4/", avatar: "avatars/profile.jpg",
-        followers: 33, posts: 2, likes: 115, comments: 13 },
+        followers: 33, posts: 2, views: 4485, likes: 115, comments: 13, shares: 38 },
+      // Flip UGC lives here for now; the Flip brand card shows the same videos.
       { platform: "TikTok", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.tiktok.com/@eliemmos.mp4", avatar: "avatars/profile.jpg",
         followers: 1, posts: 2, views: 268, likes: 3, comments: 0, shares: 0, saves: 0 },
     ],
     brands: [
       { name: "Flip", logo: "brands/flip.png", what: "The AI money manager you text in iMessage", role: "UGC creator", when: "2026 · current",
+        // Numbers from Elie's Flip UGC on @eliemmos.mp4 (TikTok, 2026-09-24). Not counted in his own totals.
+        stats: { views: 268, likes: 3, videos: 2 },
+        statsNote: "UGC videos on @eliemmos.mp4 · TikTok",
         theme: { bg: "linear-gradient(155deg, #243b61 0%, #0f1d36 45%, #070d1a 100%)", line: "#2a3f63", accent: "#bcd3f2", ink: "#0b1628", font: "'Faculty Glyphic', serif" },
-        links: [["Instagram", "https://www.instagram.com/fliptexts/"], ["TikTok", "https://www.tiktok.com/@fliptexts"]] },
+        links: [["My Flip videos", "https://www.tiktok.com/@eliemmos.mp4"], ["Flip on Instagram", "https://www.instagram.com/fliptexts/"], ["Flip on TikTok", "https://www.tiktok.com/@fliptexts"]] },
+      { name: "Onsen Retreat", logo: "brands/onsen-wordmark.svg", what: "A one-week creative retreat in Beppu, Japan", role: "Promoter", when: "2026",
+        // Numbers from the Onsen reel on Instagram @eliemmos.mp4 (screenshot, 2026-09-24); shares include 2 reposts.
+        stats: { views: 3565, likes: 71, comments: 9, shares: 17 },
+        statsNote: "Promo reel on @eliemmos.mp4 · Instagram",
+        theme: { light: true, logoBg: "#f0ece3", bg: "linear-gradient(155deg, #f4f0e7 0%, #ebe5d8 100%)", line: "#f4b37c", accent: "#0f0f0f", ink: "#f0ece3", font: "'Inclusive Sans', sans-serif" },
+        links: [["My Onsen video", "https://www.instagram.com/reel/DaRwv4oA0PD/"], ["onsen-retreat.com", "https://onsen-retreat.com"], ["Onsen on Instagram", "https://www.instagram.com/onsenretreat/"]] },
       { name: "Forge", logo: "brands/forge.png", what: "Your people, all in one place", role: "Founder · content & street interviews", when: "2026 · current",
+        // @forgenetwork.app on TikTok (11,779 views, likes, comments, saves) + Instagram (1,897 reel views).
+        // Screenshots, 2026-09-24. Not counted in Elie's own totals.
+        stats: { views: 13676, likes: 336, comments: 6, saves: 21 },
+        statsNote: "3 campus street interviews at Baruch and NYU · TikTok + Instagram",
         theme: { logoBg: "#faf9f5", bg: "linear-gradient(155deg, #26211d 0%, #1a1917 50%, #131315 100%)", line: "#3a2d25", accent: "#e08a5c", ink: "#17130f", font: "'Source Serif 4', Georgia, serif" },
         links: [["Instagram", "https://www.instagram.com/forgenetwork.app/"], ["TikTok", "https://www.tiktok.com/@forgenetwork.app"], ["Website", "https://forgenetwork.app"]] },
     ],

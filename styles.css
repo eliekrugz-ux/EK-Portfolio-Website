@@ -213,7 +213,7 @@ main { position: relative; max-width: 1200px; margin: 0 auto; padding: calc(var(
 .mk-h h2 { font: italic 500 34px/1.1 var(--display); }
 .mk-h span { font: 500 10px var(--mono); text-transform: uppercase; letter-spacing: .16em; color: var(--muted); }
 
-.mk-platforms { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 64px; }
+.mk-platforms { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 64px; }
 .pcard { position: relative; display: grid; gap: 14px; padding: 20px 18px 18px; border: 1px solid var(--line); background: var(--panel); overflow: hidden; transition: transform .3s cubic-bezier(.2,.7,.2,1), border-color .3s; }
 .pcard::before { content: ""; position: absolute; inset: 0 0 auto; height: 3px; }
 .p-instagram::before { background: linear-gradient(90deg, #fdf497, #fd5949 40%, #d6249f 70%, #285aeb); }
@@ -223,7 +223,8 @@ main { position: relative; max-width: 1200px; margin: 0 auto; padding: calc(var(
 .pcard-top em { margin-left: auto; font-style: normal; font-size: 9px; color: var(--muted); letter-spacing: .1em; text-align: right; }
 .pcard-profile { display: flex; align-items: center; gap: 12px; min-width: 0; }
 .pcard-profile img { width: 46px; height: 46px; flex: none; border-radius: 50%; object-fit: cover; border: 1px solid rgba(255,255,255,.12); }
-.pcard-handle { font: 500 19px/1.1 var(--display); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.pcard-profile img.is-logo { background: #faf9f5; object-fit: contain; padding: 7px; }
+.pcard-handle { font: 500 19px/1.1 var(--display); min-width: 0; }
 .pcard-big { display: flex; align-items: baseline; gap: 8px; }
 .pcard-big b { font: 500 40px/1 var(--mono); letter-spacing: -.04em; }
 .pcard-big span { font: 500 10px var(--mono); text-transform: uppercase; letter-spacing: .14em; color: var(--muted); }
@@ -233,8 +234,9 @@ main { position: relative; max-width: 1200px; margin: 0 auto; padding: calc(var(
 .pcard-go { font: 500 10px var(--mono); text-transform: uppercase; letter-spacing: .14em; color: var(--muted); transition: color .2s; }
 .pcard:hover .pcard-go { color: var(--accent); }
 
-.mk-brands { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: 64px; }
-.bcard { display: grid; grid-template-columns: 72px 1fr; gap: 20px; padding: 22px; border: 1px solid var(--line); background: var(--panel); transition: border-color .3s; }
+.mk-brands { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 64px; }
+.bcard { display: grid; grid-template-columns: 72px 1fr; gap: 22px; align-items: start; padding: 24px 26px; border-radius: 24px; border: 1px solid var(--line); background: var(--panel); overflow: hidden; transition: border-color .3s, transform .3s cubic-bezier(.2,.7,.2,1); }
+.bcard:hover { transform: translateY(-2px); }
 .bcard:hover { border-color: var(--accent-deep); }
 .bcard-logo { width: 72px; height: 72px; border-radius: 18px; display: grid; place-items: center; background: #f4f4f2; font-size: 36px; }
 .bcard-logo svg { width: 30px; height: 38px; fill: none; stroke: var(--accent-deep); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
@@ -254,6 +256,17 @@ main { position: relative; max-width: 1200px; margin: 0 auto; padding: calc(var(
 .bcard.branded .pill { background: var(--b-accent); color: var(--b-ink); }
 .bcard.branded p { color: #e6e6e2; }
 .bcard.branded .bcard-foot { color: rgba(255,255,255,.5); }
+.bcard-stats { display: flex; flex-wrap: wrap; gap: 6px 20px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--b-line, var(--line)); }
+.bcard-stats dt { font: 500 9px var(--mono); text-transform: uppercase; letter-spacing: .14em; color: rgba(255,255,255,.5); }
+.bcard-stats dd { font: 500 17px/1.2 var(--mono); letter-spacing: -.02em; color: var(--b-accent, var(--accent)); }
+/* Light brand cards (e.g. Onsen Retreat) invert the text colors. */
+.bcard.branded.light { color: #0f0f0f; }
+.bcard.branded.light p, .bcard.branded.light h3 { color: #0f0f0f; }
+.bcard.branded.light .bcard-foot, .bcard.branded.light .bcard-stats dt, .bcard.branded.light .bcard-note { color: rgba(15,15,15,.55); }
+.bcard.branded.light .bcard-foot a { color: #0f0f0f; text-decoration: underline; text-decoration-color: var(--b-line); text-underline-offset: 3px; }
+.bcard.branded.light .bcard-foot a:hover { color: #b8612b; }
+.bcard.branded.light .bcard-logo { box-shadow: inset 0 0 0 1px rgba(15,15,15,.08); }
+.bcard .bcard-note { margin-top: 8px; font: 500 10px/1.5 var(--mono); text-transform: uppercase; letter-spacing: .08em; color: rgba(255,255,255,.5); }
 .bcard.branded .bcard-foot a { color: var(--b-accent); }
 .bcard.branded .bcard-foot a:hover { color: #fff; }
 
