@@ -410,10 +410,21 @@
   // ---------- VIII. resume ----------
   function renderResume() {
     const R = S.resume;
-    const items = arr => arr.map(x => `
-      <div class="ritem"><div class="h"><b>${esc(x.org)}</b><span class="when">${esc(x.when)}</span></div>
-      <div class="role">${esc(x.role)}</div>${x.points ? `<ul>${x.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul>` : ""}</div>`).join("");
-    const sec = (label, body) => `<div class="rsec" data-reveal><span class="label">${label}</span><div>${body}</div></div>`;
+    // Same layout as the PDF: org + location, then role + dates, then lines and bullets.
+    const item = x => `
+      <div class="ritem">
+        <div class="r-row"><b>${esc(x.org)}</b><span>${esc(x.where || "")}</span></div>
+        ${x.role || x.when ? `<div class="r-row r-sub"><i>${esc(x.role || "")}</i><span>${esc(x.when || "")}</span></div>` : ""}
+        ${(x.lines || []).map(l => `<p class="r-line">${esc(l)}</p>`).join("")}
+        ${x.points ? `<ul>${x.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul>` : ""}
+      </div>`;
+    const section = s => `
+      <div class="rsec" data-reveal>
+        <h2 class="r-title">${esc(s.title)}</h2>
+        ${s.items ? s.items.map(item).join("") : ""}
+        ${s.info ? `<div class="r-info">${s.info.map(([k, v]) => `<p><b>${esc(k)}:</b> ${esc(v)}</p>`).join("")}</div>` : ""}
+      </div>`;
+    const sec = (label, body) => `<div class="rsec" data-reveal><h2 class="r-title">${label}</h2>${body}</div>`;
     app.innerHTML = `
       ${chapterHead("resume", `${S.location} · ${S.email}`)}
       <section class="resume">
@@ -422,12 +433,7 @@
           <a class="ghost" href="${esc(R.pdf)}" download>Download PDF</a>
           <button class="print-btn" id="print">⎙ Print resume</button>
         </div>
-        ${sec("Education", items(R.education))}
-        ${sec("Projects", items(R.projects))}
-        ${sec("Leadership", items(R.leadership))}
-        ${sec("Experience", items(R.experience))}
-        ${sec("Honors", `<ul class="plain">${R.honors.map(h => `<li>${esc(h)}</li>`).join("")}</ul>`)}
-        ${sec("Certifications", `<ul class="plain">${R.certs.map(h => `<li>${esc(h)}</li>`).join("")}</ul>`)}
+        ${R.sections.map(section).join("")}
         ${sec("Skills", `<div class="skill-groups">${Object.entries(R.skills).map(([g, list]) =>
           `<div class="sg"><span class="sg-name">${esc(g)}</span><div class="chips">${list.map(s => `<span>${esc(s)}</span>`).join("")}</div></div>`).join("")}</div>`)}
       </section>`;

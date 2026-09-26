@@ -233,40 +233,65 @@ window.SITE = {
     states: ["New York", "New Jersey", "Connecticut", "Massachusetts", "Pennsylvania", "Rhode Island", "Vermont", "Delaware", "Maryland", "District of Columbia", "Virginia", "North Carolina", "Georgia", "Florida", "Louisiana", "Illinois"],
   },
 
-  // Matches Elie_Krugolets_Resume.pdf, minus the home address and phone number.
+  // The Resume page mirrors Elie_Krugolets_Resume.pdf section by section, word for word
+  // (phone number left off the page; it's still in the PDF). Update both together.
   resume: {
     pdf: "Elie_Krugolets_Resume.pdf", // the exact PDF the Print and Download buttons use
-    education: [
-      { org: "Baruch College, CUNY", role: "Finance BBA · Intended minor in Computer Science", when: "Expected Jun 2030" },
-      { org: "Edward R. Murrow High School", role: "Murrow CTE Entrepreneurship & Murrow Music Institute · GPA 95.08", when: "Sep 2022 – Jun 2026" },
+    sections: [
+      { title: "Education and Honors", items: [
+        { org: "Baruch College – City University of New York", where: "New York, NY", when: "Expected June 2030",
+          lines: ["Major: Finance Bachelor of Business Administration | Intended Minor: Computer Science"] },
+        { org: "Edward R. Murrow High School", where: "Brooklyn, NY", role: "Murrow CTE Entrepreneurship & Murrow Music Institute", when: "Sep 2022 – Jun 2026",
+          lines: ["Cumulative GPA: 95.08", "Honors: ERM First Honors Award Recipient, AP Scholar Award Recipient, Municipal Credit Union Scholar"] },
+      ] },
+      { title: "Technical Projects", items: [
+        { org: "Forge – AI-Powered Networking Platform (forgenetwork.app)", where: "Remote", role: "Solo Developer – Founder", when: "Aug 2026", points: [
+          "Designed and shipped a full-stack, AI-powered personal networking platform (one-click LinkedIn import, tagging, and notes) independently on Anthropic Claude Code, owning frontend, backend, and deployment (Supabase, local-first browser storage, Anthropic Claude API)",
+          "Built \"Find My Path\" and \"Ask Lucky,\" AI features that rank a user's own contacts by relevance to a goal, draft personalized outreach, and answer plain-English questions about their network",
+          "Drove early adoption through organic content marketing and on-campus street interviews across NYC colleges, acquiring the platform's first users within its opening week",
+        ] },
+        { org: "Signlr – AI-Powered Trading Signals Platform (signlr.app)", where: "Remote", role: "Solo Developer – Founder", when: "May 2026", points: [
+          "Built and shipped a full-stack fintech SaaS product independently alongside Anthropic Claude Code, handling architecture, backend, frontend, and infrastructure end to end (Node.js, Supabase, Stripe, Anthropic Claude API)",
+          "Incorporated quantitative indicators derived from OpenYield and Alpaca's APIs to generate AI-assisted trade plans for retail traders",
+          "Integrated Alpaca's market data API to power a live stock screener and implemented Stripe subscription billing, user authentication, and rate-limited API infrastructure",
+        ] },
+      ] },
+      { title: "Leadership Experience", items: [
+        { org: "Murrow Virtual Enterprise", where: "Brooklyn, NY", role: "Chief Operating Officer", when: "Sep 2025 – Jun 2026", points: [
+          "Leading 4 corporate departments and coordinating 15+ members in a student-run firm competing at the national level",
+          "Managing over $550K+ in virtual capital, overseeing budgeting, financial decisions, and performance tracking",
+          "Streamlined internal workflows and cross-departments communication to improve execution during competitions",
+        ] },
+        { org: "Key Club International, Edward R. Murrow Chapter", where: "Brooklyn, NY", role: "President/Volunteer", when: "Sep 2022 – Jun 2026", points: [
+          "Lead and organize 8+ community service projects and club activities per month",
+          "Manage and plan meeting agendas for over 80 participating members",
+          "Oversee club operations, including 3+ executive board meetings and member outreach monthly",
+        ] },
+      ] },
+      { title: "Professional Experience", items: [
+        { org: "Law Offices of Nataliya Borushchak, PC", where: "Brooklyn, NY", role: "Legal Clerk", when: "May 2026 – Present", points: [
+          "File and organize both physical and digital case documents, including no-fault and trip-and-fall personal injury claims",
+          "Gaining hands-on exposure to the personal injury settlement process, from initial claim filing through settlement and resolution",
+        ] },
+        { org: "BullTaxAccountants – Industry Scholar Program", where: "Brooklyn, NY", role: "Marketing & Social Media Intern", when: "Fall 2025", points: [
+          "Conducted market research and created weekly social media content to strengthen firm visibility and audience engagement",
+          "Managed 5+ posts per week across platforms, aligning content with firm messaging and seasonal tax campaigns",
+          "Analyzed engagement trends and competitor strategies to refine posting strategy and improve reach",
+        ] },
+        { org: "The TJX Companies, Inc", where: "Brooklyn, NY", role: "Sales Associate", when: "Jul 2025 – Nov 2025", points: [
+          "Operated POS system accurately for cash, credit, and returns while following company policies",
+          "Processed daily transactions totaling up to $5,000 in sales revenue per shift, ensuring accuracy and efficiency at the register",
+          "Balanced cash drawers and monitored discrepancies, contributing to loss prevention and financial accountability across the store",
+        ] },
+      ] },
+      { title: "Additional Information", info: [
+        ["Computer Skills", "Microsoft Office Associate in Excel, PowerPoint, and Word; User-Generated Content (UGC) & Social Media Content Creation"],
+        ["Language", "Proficient in both English and Russian as certified by the New York State Seal of Biliteracy"],
+        ["Volunteer Experience", "Over 120 hours of community service including city clean-ups, non-profit outreach, and fundraising initiatives"],
+        ["Certifications", "Anthropic Claude 101 & AI Fluency; Forage - JP Morgan Investment Banking Job Simulation; London Business School - Fundamentals of Financial Analysis Certification"],
+      ] },
     ],
-    projects: [
-      { org: "Forge: AI-Powered Networking Platform", role: "Solo Developer · Founder · forgenetwork.app", when: "Aug 2026", points: ["Designed and shipped a full-stack AI networking platform (one-click LinkedIn import, tagging, notes) on my own with Claude Code, covering the frontend, backend and deployment (Supabase, local-first storage, Claude API)", "Built \"Find My Path\" and \"Ask Lucky\", AI features that rank a user's contacts by how much they can help with a goal, draft personal outreach, and answer plain-English questions about their network", "Got the first users in the opening week through organic content and street interviews at NYC colleges"] },
-      { org: "Signlr: AI-Powered Trading Signals Platform", role: "Solo Developer · Founder · signlr.app", when: "May 2026", points: ["Built and shipped a full-stack fintech SaaS end to end on my own with Claude Code (Node.js, Supabase, Stripe, Claude API)", "Used quantitative indicators from the OpenYield and Alpaca APIs to generate AI-assisted trade plans for retail traders", "Built a live stock screener on Alpaca market data, plus Stripe subscription billing, user auth and rate-limited APIs"] },
-    ],
-    leadership: [
-      { org: "Murrow Virtual Enterprise: STRYDE, Inc.", role: "Chief Operating Officer", when: "Sep 2025 – Jun 2026", points: ["Led 4 corporate departments and coordinated 15+ members in a student-run firm competing nationally", "Managed $550K+ in virtual capital, covering budgeting, financial decisions and performance tracking", "1st place, NYC Citywide Business Plan Competition"] },
-      { org: "Key Club International, Edward R. Murrow Chapter", role: "President / Volunteer", when: "Sep 2022 – Jun 2026", points: ["Led and organized 8+ service projects and club activities per month", "Planned meeting agendas for 80+ members and ran 3+ executive board meetings monthly", "120+ hours of community service: city clean-ups, nonprofit outreach, fundraising"] },
-    ],
-    experience: [
-      { org: "Law Offices of Nataliya Borushchak, PC", role: "Legal Clerk", when: "May 2026 – Present", points: ["File and organize physical and digital case documents, including no-fault and trip-and-fall personal injury claims", "Learning the personal injury settlement process hands-on, from the first claim filing to resolution"] },
-      { org: "BullTaxAccountants, Industry Scholar Program", role: "Marketing & Social Media Intern", when: "Fall 2025", points: ["Did market research and created weekly social content to raise the firm's visibility", "Managed 5+ posts per week, aligned with the firm's messaging and seasonal tax campaigns", "Analyzed engagement trends and competitor strategies to improve reach"] },
-      { org: "The TJX Companies, Inc.", role: "Sales Associate", when: "Jul – Nov 2025", points: ["Processed up to $5,000 in sales per shift", "Balanced cash drawers and flagged discrepancies to support loss prevention"] },
-    ],
-    honors: [
-      "Municipal Credit Union Foundation Scholar",
-      "ERM First Honors Award",
-      "AP Scholar Award",
-      "NYC Business Plan Competition, 1st Place",
-      "Advertising Club of New York Pitch Competition, 1st Place",
-      "NYS Seal of Biliteracy, English & Russian",
-    ],
-    certs: [
-      "JPMorganChase Investment Banking Job Simulation, Forage",
-      "Fundamentals of Financial Analysis, London Business School",
-      "Claude 101 · AI Fluency, Anthropic",
-      "Microsoft Office Specialist: Excel, PowerPoint, Word",
-    ],
+    // Extra section on the site only (not in the PDF): the full skills list from LinkedIn.
     skills: {
       "Finance": ["Financial Analysis", "Financial Data Analysis", "DCF Valuation", "Mergers & Acquisitions (M&A)", "Financial Literacy", "Money Management", "Cash Handling"],
       "Business": ["Business Strategy", "Business Development", "Business Planning", "Entrepreneurship", "Operations Management", "Project Management", "Research Skills"],
