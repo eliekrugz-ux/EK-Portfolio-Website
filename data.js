@@ -115,7 +115,7 @@ window.SITE = {
     { date: "09.26", text: "Takes Forge to campus: street interviews, posters, carousels", tags: ["build"], detail: "Got Forge's first users in its opening week through street interviews at NYC colleges and organic content. I designed the whole launch kit myself: posters with QR codes, an Instagram carousel, and LinkedIn and story graphics." },
     { date: "09.26", text: "Launches forgenetwork.app", tags: ["build"], link: "https://forgenetwork.app" },
     { date: "08.26", text: "Starts at Baruch College, Finance BBA", tags: ["school", "finance"], detail: "Bachelor of Business Administration in Finance with an intended minor in Computer Science, class of 2030." },
-    { date: "08.26", text: "Starts building Forge", tags: ["build"], detail: "An AI networking platform: one-click LinkedIn import, tags and notes. \"Find My Path\" ranks your contacts by how much they can help with a goal and drafts the outreach, and \"Ask Lucky\" answers plain-English questions about your network." },
+    { date: "08.26", text: "Starts building Forge", tags: ["build"], detail: "An AI networking platform: one-click LinkedIn import, tags and notes, plus AI features that rank your contacts by how much they can help with a goal, draft the outreach, and answer plain-English questions about your network." },
     { date: "07.26", text: "Completes the JPMorganChase Investment Banking job simulation", tags: ["finance"], link: "https://www.theforage.com/completion-certificates/Sj7temL583QAYpHXD/YD2kY95RQxQtXxFTS_Sj7temL583QAYpHXD_6a4be746e3042b5c4db9310f_1783458517108_completion_certificate.pdf" },
     { date: "07.26", text: "Fundamentals of Financial Analysis, London Business School", tags: ["finance"], link: "https://www.coursera.org/account/accomplishments/records/2XECAGE17JEV" },
     { date: "07.26", text: "Builds his own trading-strategy backtesting engine", tags: ["build", "finance"] },
@@ -152,14 +152,14 @@ window.SITE = {
     {
       name: "Forge", ticker: "FRGE", since: "08.26", role: "Founder · solo developer",
       url: "https://forgenetwork.app",
-      summary: "An AI networking platform for students. One-click LinkedIn import, tags and notes, and contacts stay local by default. \"Find My Path\" ranks your contacts by how much they can help with a goal and drafts the outreach, and \"Ask Lucky\" answers plain-English questions about your network. I got the first users in the opening week through street interviews at NYC colleges.",
+      summary: "An AI networking platform for students. One-click LinkedIn import, tags and notes, and contacts stay local by default. AI features rank your contacts by how much they can help with a goal, draft the outreach, and answer plain-English questions about your network. I got the first users in the opening week through street interviews at NYC colleges.",
       stack: "JavaScript · Supabase · Claude API · Vercel",
     },
     {
       name: "Signlr", ticker: "SGNL", since: "05.26", role: "Founder · solo developer",
       url: "https://signlr.app",
       summary: "A fintech SaaS that turns market data into AI-assisted trade plans for retail traders, built on my own quantitative indicators. It also has a live stock screener, subscription billing and user accounts.",
-      stack: "Node.js · Supabase · Stripe · Alpaca · OpenYield · Claude API",
+      stack: "Supabase · Stripe · Alpaca · OpenYield · Claude API",
     },
   ],
 
@@ -231,11 +231,11 @@ window.SITE = {
       { title: "Technical Projects", items: [
         { org: "Forge – AI-Powered Networking Platform (forgenetwork.app)", where: "Remote", role: "Solo Developer – Founder", when: "Aug 2026", points: [
           "Designed and shipped a full-stack, AI-powered personal networking platform (one-click LinkedIn import, tagging, and notes) independently on Anthropic Claude Code, owning frontend, backend, and deployment (Supabase, local-first browser storage, Anthropic Claude API)",
-          "Built \"Find My Path\" and \"Ask Lucky,\" AI features that rank a user's own contacts by relevance to a goal, draft personalized outreach, and answer plain-English questions about their network",
+          "Built AI features that rank a user's own contacts by relevance to a goal, draft personalized outreach, and answer plain-English questions about their network",
           "Drove early adoption through organic content marketing and on-campus street interviews across NYC colleges, acquiring the platform's first users within its opening week",
         ] },
         { org: "Signlr – AI-Powered Trading Signals Platform (signlr.app)", where: "Remote", role: "Solo Developer – Founder", when: "May 2026", points: [
-          "Built and shipped a full-stack fintech SaaS product independently alongside Anthropic Claude Code, handling architecture, backend, frontend, and infrastructure end to end (Node.js, Supabase, Stripe, Anthropic Claude API)",
+          "Built and shipped a full-stack fintech SaaS product independently alongside Anthropic Claude Code, handling architecture, backend, frontend, and infrastructure end to end (Supabase, Stripe, Anthropic Claude API)",
           "Incorporated quantitative indicators derived from OpenYield and Alpaca's APIs to generate AI-assisted trade plans for retail traders",
           "Integrated Alpaca's market data API to power a live stock screener and implemented Stripe subscription billing, user authentication, and rate-limited API infrastructure",
         ] },
