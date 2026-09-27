@@ -104,10 +104,6 @@
   REACH.interactions = REACH.likes + REACH.comments + REACH.shares + REACH.saves;
   const interactionMix = `${compact(REACH.likes)} likes · ${compact(REACH.comments)} comments · ${compact(REACH.shares)} shares · ${compact(REACH.saves)} saves`;
 
-  const fillTotals = v => v.replace(/\{(\w+)\}/g, (m, k) => REACH[k] != null ? compact(REACH[k]) : m);
-  const tickerItems = S.ticker.map(t =>
-    `<span class="tk">${esc(t.text)} <em class="${t.up ? "up" : ""}">${t.up ? "▲ " : ""}${esc(fillTotals(t.value))}</em></span>`).join("");
-  document.getElementById("ticker").innerHTML = tickerItems + tickerItems; // doubled for a seamless loop
 
   // ---------- home ----------
   function renderHome() {

@@ -98,22 +98,6 @@ window.SITE = {
   // One line under the name on the home page.
   focus: ["Entrepreneurship", "Social Media", "Finance"],
 
-  // The stock-ticker bar under the header. `up: true` gets a green ▲.
-  // {views} and {interactions} fill in from the media kit totals.
-  ticker: [
-    { text: "NYC Business Plan Competition", value: "1st place", up: true },
-    { text: "Forge", value: "live · forgenetwork.app", up: true },
-    { text: "Signlr", value: "live · signlr.app", up: true },
-    { text: "MCU Foundation", value: "Scholar", up: true },
-    { text: "Ad Club of New York pitch", value: "1st place", up: true },
-    { text: "Content views", value: "{views}+", up: true },
-    { text: "Interactions", value: "{interactions}+", up: true },
-    { text: "Countries visited", value: "19" },
-    { text: "AP Scholar", value: "2025" },
-    { text: "JPMorganChase IB simulation", value: "complete" },
-    { text: "Seal of Biliteracy", value: "Russian" },
-  ],
-
   // The passport on the About page.
   passport: [
     ["Surname", "Krugolets"],
