@@ -91,8 +91,8 @@ window.SITE = {
     "Hey, I'm Elie.",
     "I'm 18 and studying Finance at Baruch College (CUNY), class of 2030, with an intended minor in Computer Science. Right now I'm applying to finance and entrepreneurship clubs on campus.",
     "I was born and raised in Brooklyn, the middle of three kids with two sisters, in a family of Jewish immigrants from Soviet Ukraine.",
-    "Professionally, I'm drawn to finance, social media marketing, operations and building things. In high school, I served as COO of a 15-person virtual company, led our Key Club chapter, and won New York City's Business Plan Competition. Since then, I've launched two products of my own: Forge and Signlr.",
-    "Outside of business, I love posting on Instagram and TikTok, and I've recently gotten into creating UGC (user-generated content). I also have a deep passion for fashion and travel.",
+    "Professionally, I'm drawn to finance, social media marketing, operations and building things. In high school, I served as COO of a 15-person virtual company, led our Key Club chapter, and won New York City's Business Plan Competition. Since then, I've launched two projects of my own: Forge and Signlr.",
+    "Outside of business, I love posting on Instagram and TikTok, and I've recently gotten into UGC (user-generated content). I also have a deep passion for thrifting and travel.",
   ],
 
   // One line under the name on the home page.
