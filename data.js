@@ -226,7 +226,7 @@ window.SITE = {
     sections: [
       { title: "Education and Honors", items: [
         { org: "Baruch College – City University of New York", where: "New York, NY", when: "Expected June 2030",
-          lines: ["Major: Finance BBA | Intended Minor: Computer Science", "Organizations: Scholars of Finance (Candidate)"] },
+          lines: ["Major: Finance BBA | Intended Minor: Computer Science", "Activities: Scholars of Finance, Candidate"] },
         { org: "Edward R. Murrow High School", where: "Brooklyn, NY", role: "Murrow CTE Entrepreneurship & Murrow Music Institute", when: "Sep 2022 – Jun 2026",
           lines: ["Cumulative GPA: 95.08", "Honors: ERM First Honors Award Recipient, AP Scholar Award Recipient, Municipal Credit Union Scholar"] },
       ] },
