@@ -42,7 +42,7 @@ window.SITE = {
         followers: 313, posts: 3, views: 137379, likes: 18924, comments: 224, shares: 3218, saves: 817 },
       // Whole account: "How executives become successful" (920 views) + the Onsen Retreat reel (3,565). Shares include reposts.
       { platform: "Instagram", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.instagram.com/eliemmos.mp4/", avatar: "avatars/profile.jpg",
-        followers: 33, posts: 2, views: 4485, likes: 115, comments: 13, shares: 38 },
+        followers: 65, posts: 2, views: 4485, likes: 115, comments: 13, shares: 38 },
       // Flip UGC lives here for now; the Flip brand card shows the same videos.
       { platform: "TikTok", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.tiktok.com/@eliemmos.mp4", avatar: "avatars/profile.jpg",
         followers: 1, posts: 2, views: 268, likes: 3, comments: 0, shares: 0, saves: 0 },
