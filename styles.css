@@ -274,6 +274,7 @@ main { position: relative; max-width: 1200px; margin: 0 auto; padding: calc(var(
 .posts .d { font: 500 11px var(--mono); color: var(--muted); letter-spacing: .08em; }
 .posts p { font-size: 14.5px; margin-top: 4px; transition: color .2s; }
 .posts a:hover p { color: var(--accent); }
+.posts .p-stats { display: block; margin-top: 6px; font: 500 10.5px var(--mono); color: var(--muted); letter-spacing: .06em; }
 
 .mk-contact { text-align: center; padding: 64px 24px; border: 1px solid var(--line); background: radial-gradient(ellipse at 50% 120%, rgba(147,163,100,.14), transparent 60%), var(--panel); }
 .mk-contact h2 { font: italic 500 clamp(36px, 5vw, 60px)/1.05 var(--display); margin: 14px 0 26px; }

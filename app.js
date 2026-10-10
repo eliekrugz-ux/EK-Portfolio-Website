@@ -252,7 +252,7 @@
         <ol class="posts">${S.posts.map(p => `
           <li data-reveal><a ${ext(p.url)}>
             <span class="d">${esc(p.date)}</span>
-            <span><span class="label">${esc(p.platform)}</span><p>${esc(p.text)}</p></span>
+            <span><span class="label">${esc(p.platform)}</span><p>${esc(p.text)}</p>${p.stats ? `<span class="p-stats">${esc(p.stats)}</span>` : ""}</span>
           </a></li>`).join("")}
         </ol>` : ""}
 

@@ -29,7 +29,7 @@ window.SITE = {
     avatar: "avatars/profile.jpg", // the profile picture used on Instagram and TikTok
     bio: "NYC-based creator making lifestyle, fashion, travel and fintech content.",
     niches: ["Lifestyle", "Fashion", "Travel", "Finance & fintech", "Startups", "NYC"],
-    statsAsOf: "Sept 2026",
+    statsAsOf: "Oct 2026",
     // Per-account numbers, added up from each public post on the date in `statsAsOf`.
     // Instagram likes/comments cover the posts visible to the public (12 of 19 on @eliemmos).
     // TikTok numbers were confirmed from Elie's screenshots on 2026-09-24.
@@ -37,23 +37,33 @@ window.SITE = {
       // Views are the 4 reels (515K + 17.9K + 16.8K + 2,009); likes/comments add the reels to the 12 public photo posts.
       // Shares include reposts (15.7K + 1,160, 708 + 30, 134 + 13). From Elie's screenshots, 2026-09-24.
       { platform: "Instagram", handle: "@eliemmos", role: "Main", url: "https://www.instagram.com/eliemmos/", avatar: "avatars/profile.jpg",
-        followers: 646, posts: 19, views: 551709, likes: 30786, comments: 765, shares: 17745, saves: 1564 },
+        followers: 651, posts: 19, views: 551709, likes: 30786, comments: 765, shares: 17745, saves: 1564 },
       { platform: "TikTok", handle: "@eliemmos", role: "Main", url: "https://www.tiktok.com/@eliemmos", avatar: "avatars/profile.jpg",
         followers: 313, posts: 3, views: 137379, likes: 18924, comments: 224, shares: 3218, saves: 817 },
       // Whole account: "How executives become successful" (920 views) + the Onsen Retreat reel (3,565). Shares include reposts.
       { platform: "Instagram", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.instagram.com/eliemmos.mp4/", avatar: "avatars/profile.jpg",
-        followers: 65, posts: 2, views: 4485, likes: 115, comments: 13, shares: 38 },
+        followers: 72, posts: 6, views: 4485, likes: 115, comments: 13, shares: 38 },
       // Flip UGC lives here for now; the Flip brand card shows the same videos.
       { platform: "TikTok", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.tiktok.com/@eliemmos.mp4", avatar: "avatars/profile.jpg",
         followers: 1, posts: 2, views: 268, likes: 3, comments: 0, shares: 0, saves: 0 },
+      // Finance UGC account (Flip + Raijin). One video so far; from Elie, 2026-10-10.
+      { platform: "Instagram", handle: "@eliemmos.xlxs", role: "Finance UGC", url: "https://www.instagram.com/eliemmos.xlxs/", avatar: "avatars/xlxs.jpg",
+        followers: 16, posts: 1, views: 536 },
     ],
     brands: [
       { name: "Flip", logo: "brands/flip.png", what: "The AI money manager you text in iMessage", role: "UGC creator", when: "2026 · current",
-        // Numbers from Elie's Flip UGC on @eliemmos.mp4 (TikTok, 2026-09-24). Not counted in his own totals.
-        stats: { views: 268, likes: 3, videos: 2 },
-        statsNote: "UGC videos on @eliemmos.mp4 · TikTok",
+        // Flip UGC: 2 TikToks on @eliemmos.mp4 (268 views, 2026-09-24) + the Flip/Raijin reel on @eliemmos.xlxs (536 views, 2026-10-10).
+        // Not counted in his own totals.
+        stats: { views: 804, likes: 3, videos: 3 },
+        statsNote: "UGC on @eliemmos.mp4 · TikTok and @eliemmos.xlxs · Instagram",
         theme: { bg: "linear-gradient(155deg, #243b61 0%, #0f1d36 45%, #070d1a 100%)", line: "#2a3f63", accent: "#bcd3f2", ink: "#0b1628", font: "'Faculty Glyphic', serif" },
-        links: [["My Flip videos", "https://www.tiktok.com/@eliemmos.mp4"], ["Flip on Instagram", "https://www.instagram.com/fliptexts/"], ["Flip on TikTok", "https://www.tiktok.com/@fliptexts"]] },
+        links: [["My Flip videos", "https://www.instagram.com/eliemmos.xlxs/"], ["Flip on Instagram", "https://www.instagram.com/fliptexts/"], ["Flip on TikTok", "https://www.tiktok.com/@fliptexts"]] },
+      { name: "Raijin", logo: "brands/raijin.png", what: "AI agents that trade for you", role: "UGC creator", when: "2026 · current",
+        // The Flip/Raijin reel on Instagram @eliemmos.xlxs (2026-10-10). Not counted in his own totals.
+        stats: { views: 536, videos: 1 },
+        statsNote: "Finance UGC on @eliemmos.xlxs · Instagram",
+        theme: { bg: "linear-gradient(155deg, #13232c 0%, #0d1118 50%, #0a0a0f 100%)", line: "#1d3540", accent: "#6ef0fb", ink: "#0a0a0f", font: "'Shippori Mincho B1', serif" },
+        links: [["My Raijin video", "https://www.instagram.com/eliemmos.xlxs/"], ["raijin.trade", "https://raijin.trade"], ["Raijin on Instagram", "https://www.instagram.com/raijin.trade/"], ["Raijin on TikTok", "https://www.tiktok.com/@raijin.trade"]] },
       { name: "Onsen Retreat", logo: "brands/onsen-wordmark.svg", what: "A one-week creative retreat in Beppu, Japan", role: "Promoter", when: "2026",
         // Numbers from the Onsen reel on Instagram @eliemmos.mp4 (screenshot, 2026-09-24); shares include 2 reposts.
         stats: { views: 3565, likes: 71, comments: 9, shares: 17 },
@@ -75,13 +85,16 @@ window.SITE = {
       ["Lifestyle & fashion posts", "Product placement in everyday NYC, travel and outfit content."],
     ],
     elsewhere: [
-      { name: "LinkedIn", handle: "elie-krugolets", url: "https://www.linkedin.com/in/elie-krugolets-288738335", blurb: "Career updates, wins, and what I'm building." },
+      { name: "LinkedIn", handle: "elie-krugolets · 413 followers", url: "https://www.linkedin.com/in/elie-krugolets-288738335", blurb: "Career updates, wins, and what I'm building." },
       { name: "GitHub", handle: "eliekrugz-ux", url: "https://github.com/eliekrugz-ux", blurb: "The code behind Forge and my other projects." },
     ],
   },
 
-  // Recent posts for the Socials page, newest first.
+  // Recent posts for the Socials page, newest first. Stats from Elie's LinkedIn screenshot, 2026-10-10.
   posts: [
+    { date: "09.26.26", platform: "LinkedIn", url: "https://www.linkedin.com/in/elie-krugolets-288738335/recent-activity/all/", text: "I built a portfolio website to showcase my work and lay out where I'm headed.", stats: "469 impressions · 18 reactions · 1 comment" },
+    { date: "09.22.26", platform: "LinkedIn", url: "https://www.linkedin.com/in/elie-krugolets-288738335/recent-activity/all/", text: "Two weeks ago I launched forgenetwork.app, then tried to market it with zero audience. Here's what happened.", stats: "796 impressions · 22 reactions · 8 comments" },
+    { date: "09.08.26", platform: "LinkedIn", url: "https://www.linkedin.com/in/elie-krugolets-288738335/recent-activity/all/", text: "This past year I went to a lot of mixers full of creators, builders and execs. Why I built Forge.", stats: "1,486 impressions · 27 reactions · 15 comments · 1 repost" },
     { date: "06.17.26", platform: "LinkedIn", url: "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7473142007708856320", text: "Selected as an MCU Foundation Scholar, a scholarship supporting my next chapter at Baruch." },
     { date: "06.11.26", platform: "LinkedIn", url: "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7470643894599258112", text: "Looking back on my year as Key Club President at Murrow: the Sip N' Paint fundraiser with eight schools, and the Leadership Training Conference in Albany." },
     { date: "02.15.26", platform: "LinkedIn", url: "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7428619708007931904", text: "STRYDE, Inc. took 1st place at the Virtual Enterprise Citywide Business Plan Competition. Proud to serve as COO of this team." },
