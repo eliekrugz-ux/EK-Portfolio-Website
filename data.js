@@ -34,35 +34,34 @@ window.SITE = {
     // Instagram likes/comments cover the posts visible to the public (12 of 19 on @eliemmos).
     // TikTok numbers were confirmed from Elie's screenshots on 2026-09-24.
     accounts: [
-      // Views are the 4 reels (515K + 17.9K + 16.8K + 2,009); likes/comments add the reels to the 12 public photo posts.
+      // Views are the 4 reels (517K + 17.9K + 16.9K + 2,027, 2026-10-22); likes/comments add the reels to the 12 public photo posts.
       // Shares include reposts (15.7K + 1,160, 708 + 30, 134 + 13). From Elie's screenshots, 2026-09-24.
       { platform: "Instagram", handle: "@eliemmos", role: "Main", url: "https://www.instagram.com/eliemmos/", avatar: "avatars/profile.jpg",
-        followers: 651, posts: 19, views: 551709, likes: 30786, comments: 765, shares: 17745, saves: 1564 },
+        followers: 651, posts: 19, views: 553827, likes: 30786, comments: 765, shares: 17745, saves: 1564 },
       { platform: "TikTok", handle: "@eliemmos", role: "Main", url: "https://www.tiktok.com/@eliemmos", avatar: "avatars/profile.jpg",
         followers: 313, posts: 3, views: 137379, likes: 18924, comments: 224, shares: 3218, saves: 817 },
-      // Whole account: "How executives become successful" (920 views) + the Onsen Retreat reel (3,565), plus 4 new reels
-      // (2,113 + 2,740 + 537 + 2,180 views; likes 102 + 115 + 33 + 84; comments 28 + 7). Shares are the first two reels only.
-      // From Elie's screenshot, 2026-10-10.
+      // Whole account, 7 reels: views 2196 + 476 + 804 + 1387 + 2978 + 633 + 2241; likes 105 + 37 + 43 + 54 + 127 + 38 + 84;
+      // comments 13 + 24 + 7; shares 27 + 16 + 16. From Elie, 2026-10-22.
       { platform: "Instagram", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.instagram.com/eliemmos.mp4/", avatar: "avatars/profile.jpg",
-        followers: 72, posts: 6, views: 12055, likes: 449, comments: 48, shares: 38 },
+        followers: 86, posts: 7, views: 10715, likes: 488, comments: 44, shares: 59 },
       // Flip UGC lives here for now; the Flip brand card shows the same videos.
       { platform: "TikTok", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.tiktok.com/@eliemmos.mp4", avatar: "avatars/profile.jpg",
         followers: 1, posts: 2, views: 268, likes: 3, comments: 0, shares: 0, saves: 0 },
       // Finance UGC account (Flip + Raijin). One video so far; from Elie, 2026-10-10.
       { platform: "Instagram", handle: "@eliemmos.xlxs", role: "Finance UGC", url: "https://www.instagram.com/eliemmos.xlxs/", avatar: "avatars/xlxs.jpg",
-        followers: 16, posts: 1, views: 536, likes: 33, comments: 6 },
+        followers: 22, posts: 1, views: 636, likes: 36, comments: 6 },
     ],
     brands: [
       { name: "Flip", logo: "brands/flip.png", what: "The AI money manager you text in iMessage", role: "UGC creator", when: "2026 · current",
-        // Flip UGC: 2 TikToks on @eliemmos.mp4 (268 views, 2026-09-24) + the Flip/Raijin reel on @eliemmos.xlxs (536 views, 2026-10-10).
+        // Flip UGC: 2 TikToks on @eliemmos.mp4 (268 views, 2026-09-24) + the Flip/Raijin reel on @eliemmos.xlxs (636 views, 2026-10-22).
         // Not counted in his own totals.
-        stats: { views: 804, likes: 36, comments: 6, videos: 3 },
+        stats: { views: 904, likes: 39, comments: 6, videos: 3 },
         statsNote: "UGC on @eliemmos.mp4 · TikTok and @eliemmos.xlxs · Instagram",
         theme: { bg: "linear-gradient(155deg, #243b61 0%, #0f1d36 45%, #070d1a 100%)", line: "#2a3f63", accent: "#bcd3f2", ink: "#0b1628", font: "'Faculty Glyphic', serif" },
         links: [["My Flip videos", "https://www.instagram.com/eliemmos.xlxs/"], ["Flip on Instagram", "https://www.instagram.com/fliptexts/"], ["Flip on TikTok", "https://www.tiktok.com/@fliptexts"]] },
       { name: "Raijin", logo: "brands/raijin.png", what: "AI agents that trade for you", role: "UGC creator", when: "2026 · current",
-        // The Flip/Raijin reel on Instagram @eliemmos.xlxs (2026-10-10). Not counted in his own totals.
-        stats: { views: 536, likes: 33, comments: 6, videos: 1 },
+        // The Flip/Raijin reel on Instagram @eliemmos.xlxs (2026-10-22). Not counted in his own totals.
+        stats: { views: 636, likes: 36, comments: 6, videos: 1 },
         statsNote: "Finance UGC on @eliemmos.xlxs · Instagram",
         theme: { bg: "linear-gradient(155deg, #13232c 0%, #0d1118 50%, #0a0a0f 100%)", line: "#1d3540", accent: "#6ef0fb", ink: "#0a0a0f", font: "'Shippori Mincho B1', serif" },
         links: [["My Raijin video", "https://www.instagram.com/eliemmos.xlxs/"], ["raijin.trade", "https://raijin.trade"], ["Raijin on Instagram", "https://www.instagram.com/raijin.trade/"], ["Raijin on TikTok", "https://www.tiktok.com/@raijin.trade"]] },
