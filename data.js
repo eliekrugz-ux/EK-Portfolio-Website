@@ -42,8 +42,9 @@ window.SITE = {
         followers: 313, posts: 3, views: 137379, likes: 18924, comments: 224, shares: 3218, saves: 817 },
       // Whole account, 7 reels: views 2196 + 476 + 804 + 1387 + 2978 + 633 + 2241; likes 105 + 37 + 43 + 54 + 127 + 38 + 84;
       // comments 13 + 24 + 7; shares 27 + 16 + 16. From Elie, 2026-10-22.
+      // Views also include the deleted Onsen Retreat reel (3,565).
       { platform: "Instagram", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.instagram.com/eliemmos.mp4/", avatar: "avatars/profile.jpg",
-        followers: 86, posts: 7, views: 10715, likes: 488, comments: 44, shares: 59 },
+        followers: 86, posts: 7, views: 14280, likes: 488, comments: 44, shares: 59 },
       // Flip UGC lives here for now; the Flip brand card shows the same videos.
       { platform: "TikTok", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.tiktok.com/@eliemmos.mp4", avatar: "avatars/profile.jpg",
         followers: 1, posts: 2, views: 268, likes: 3, comments: 0, shares: 0, saves: 0 },
@@ -70,7 +71,7 @@ window.SITE = {
         stats: { views: 3565, likes: 71, comments: 9, shares: 17 },
         statsNote: "Promo reel on @eliemmos.mp4 · Instagram",
         theme: { light: true, logoBg: "#f0ece3", bg: "linear-gradient(155deg, #f4f0e7 0%, #ebe5d8 100%)", line: "#f4b37c", accent: "#0f0f0f", ink: "#f0ece3", font: "'Inclusive Sans', sans-serif" },
-        links: [["My Onsen video", "https://www.instagram.com/reel/DaRwv4oA0PD/"], ["onsen-retreat.com", "https://onsen-retreat.com"], ["Onsen on Instagram", "https://www.instagram.com/onsenretreat/"]] },
+        links: [["onsen-retreat.com", "https://onsen-retreat.com"], ["Onsen on Instagram", "https://www.instagram.com/onsenretreat/"]] },
       { name: "Forge", logo: "brands/forge.png", what: "Your people, all in one place", role: "Founder · content & street interviews", when: "2026 · current",
         // @forgenetwork.app on TikTok (11,779 views, likes, comments, saves) + Instagram (1,897 reel views).
         // Screenshots, 2026-09-24. Not counted in Elie's own totals.
