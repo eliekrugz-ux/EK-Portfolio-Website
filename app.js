@@ -213,7 +213,7 @@
           </div>
           <div class="pcard-big"><b>${compact(a.followers)}</b><span>${a.followers === 1 ? "follower" : "followers"}</span></div>
           <dl class="pcard-stats">
-            ${[["Views", a.views], ["Likes", a.likes], ["Comments", a.comments], [a.platform === "TikTok" ? "Videos" : "Posts", a.posts]]
+            ${[["Views", a.views], ["Likes", a.likes], ["Comments", a.comments]]
               .filter(([, v]) => v != null).slice(0, 3)
               .map(([k, v]) => `<div><dt>${k}</dt><dd>${compact(v)}</dd></div>`).join("")}
           </dl>
