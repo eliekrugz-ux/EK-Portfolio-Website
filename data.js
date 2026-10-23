@@ -241,55 +241,60 @@ window.SITE = {
     sections: [
       { title: "Education and Honors", items: [
         { org: "Baruch College – City University of New York", where: "New York, NY", when: "Expected June 2030",
-          lines: ["Major: Finance BBA | Intended Minor: Computer Science", "Activities: Scholars of Finance, Candidate"] },
+          lines: ["Bachelor of Business Administration in Finance | Intended Minor: Computer Science"] },
         { org: "Edward R. Murrow High School", where: "Brooklyn, NY", role: "Murrow CTE Entrepreneurship & Murrow Music Institute", when: "Sep 2022 – Jun 2026",
-          lines: ["Cumulative GPA: 95.08", "Honors: ERM First Honors Award Recipient, AP Scholar Award Recipient, Municipal Credit Union Scholar"] },
+          lines: ["Cumulative GPA: 95.08 | Honors: ERM First Honors Award Recipient; AP Scholar Award Recipient; Municipal Credit Union Scholar"] },
       ] },
       { title: "Technical Projects", items: [
-        { org: "Forge – AI-Powered Networking Platform (forgenetwork.app)", where: "Remote", role: "Solo Developer – Founder", when: "Aug 2026", points: [
-          "Designed and shipped a full-stack, AI-powered personal networking platform (one-click LinkedIn import, tagging, and notes) independently on Anthropic Claude Code, owning frontend, backend, and deployment (Supabase, local-first browser storage, Anthropic Claude API)",
-          "Built AI features that rank a user's own contacts by relevance to a goal, draft personalized outreach, and answer plain-English questions about their network",
+        { org: "Forge – AI-Powered Networking Platform (forgenetwork.app)", where: "Remote", role: "Solo Developer – Founder", when: "Aug 2026 – Sep 2026", points: [
+          "Designed and shipped a full-stack, AI-powered personal networking platform independently using Anthropic's Claude Code",
+          "Built AI features that rank a user's own contacts by relevance to a goal and draft personalized outreach",
           "Drove early adoption through organic content marketing and on-campus street interviews across NYC colleges, acquiring the platform's first users within its opening week",
         ] },
-        { org: "Signlr – AI-Powered Trading Signals Platform (signlr.app)", where: "Remote", role: "Solo Developer – Founder", when: "May 2026", points: [
-          "Built and shipped a full-stack fintech SaaS product independently alongside Anthropic Claude Code, handling architecture, backend, frontend, and infrastructure end to end (Supabase, Stripe, Anthropic Claude API)",
-          "Incorporated quantitative indicators derived from OpenYield and Alpaca's APIs to generate AI-assisted trade plans for retail traders",
-          "Integrated Alpaca's market data API to power a live stock screener and implemented Stripe subscription billing, user authentication, and rate-limited API infrastructure",
+        { org: "Signlr – AI-Powered Trading Signals Platform (signlr.app)", where: "Remote", role: "Solo Developer – Founder", when: "May 2026 – Aug 2026", points: [
+          "Built and shipped a full-stack fintech SaaS product independently using Anthropic's Claude Code, handling all architecture",
+          "Incorporated quantitative indicators derived from OpenYield and Alpaca's APIs to generate AI-assisted trade plans for traders",
+          "Integrated market data to power a live stock screener and implemented subscription billing and user authentication",
         ] },
       ] },
       { title: "Leadership Experience", items: [
-        { org: "Murrow Virtual Enterprise", where: "Brooklyn, NY", role: "Chief Operating Officer", when: "Sep 2025 – Jun 2026", points: [
-          "Leading 4 corporate departments and coordinating 15+ members in a student-run firm competing at the national level",
-          "Managing over $550K+ in virtual capital, overseeing budgeting, financial decisions, and performance tracking",
-          "Streamlined internal workflows and cross-departments communication to improve execution during competitions",
+        { org: "Scholars of Finance, Baruch Chapter", where: "New York, NY", role: "Member", when: "Sep 2026 – Present", points: [
+          "Completing an 8-week Leadership Development Program, meeting weekly to examine personal values, ethical decision making, and leadership in finance",
+          "Attend weekly professional workshops covering technical finance topics, career readiness, and networking strategy",
+        ] },
+        { org: "Virtual Enterprise International, Edward R. Murrow Chapter", where: "Brooklyn, NY", role: "Chief Operating Officer", when: "Sep 2025 – Jun 2026", points: [
+          "Led 4 corporate departments and coordinated 15+ members in a student-run firm competing at the national level",
+          "Managed $550K+ in virtual capital, overseeing budgeting, financial decisions, and performance tracking",
+          "Streamlined internal workflows and cross-department communication to improve execution during competitions",
         ] },
         { org: "Key Club International, Edward R. Murrow Chapter", where: "Brooklyn, NY", role: "President/Volunteer", when: "Sep 2022 – Jun 2026", points: [
-          "Lead and organize 8+ community service projects and club activities per month",
-          "Manage and plan meeting agendas for over 80 participating members",
-          "Oversee club operations, including 3+ executive board meetings and member outreach monthly",
+          "Led and organized 8+ community service projects and club activities per month",
+          "Managed and planned meeting agendas for 80+ participating members",
+          "Oversaw club operations, including 3+ monthly executive board meetings and member outreach",
         ] },
       ] },
       { title: "Professional Experience", items: [
         { org: "Law Offices of Nataliya Borushchak, PC", where: "Brooklyn, NY", role: "Legal Clerk", when: "May 2026 – Present", points: [
           "File and organize both physical and digital case documents, including no-fault and trip-and-fall personal injury claims",
-          "Gaining hands-on exposure to the personal injury settlement process, from initial claim filing through settlement and resolution",
+          "Gain hands-on exposure to the personal injury settlement process, from initial claim filing through settlement and resolution",
         ] },
-        { org: "BullTaxAccountants – Industry Scholar Program", where: "Brooklyn, NY", role: "Marketing & Social Media Intern", when: "Fall 2025", points: [
+        { org: "BullTaxAccountants – Industry Scholar Program", where: "Brooklyn, NY", role: "Marketing & Social Media Intern", when: "Oct 2025 – Dec 2025", points: [
           "Conducted market research and created weekly social media content to strengthen firm visibility and audience engagement",
           "Managed 5+ posts per week across platforms, aligning content with firm messaging and seasonal tax campaigns",
-          "Analyzed engagement trends and competitor strategies to refine posting strategy and improve reach",
+          "Analyzed engagement trends and competitor strategies to refine posting approach and improve reach",
         ] },
-        { org: "The TJX Companies, Inc", where: "Brooklyn, NY", role: "Sales Associate", when: "Jul 2025 – Nov 2025", points: [
-          "Operated POS system accurately for cash, credit, and returns while following company policies",
-          "Processed daily transactions totaling up to $5,000 in sales revenue per shift, ensuring accuracy and efficiency at the register",
+        { org: "The TJX Companies, Inc.", where: "Brooklyn, NY", role: "Sales Associate", when: "Jul 2025 – Nov 2025", points: [
+          "Operated the POS system accurately for cash, credit, and return transactions in line with company policies",
+          "Processed up to $5,000 in sales per shift, ensuring accuracy and efficiency at the register",
           "Balanced cash drawers and monitored discrepancies, contributing to loss prevention and financial accountability across the store",
         ] },
       ] },
       { title: "Additional Information", info: [
-        ["Computer Skills", "Microsoft Office Associate in Excel, PowerPoint, and Word; User-Generated Content (UGC) & Social Media Content Creation"],
-        ["Language", "Proficient in both English and Russian as certified by the New York State Seal of Biliteracy"],
-        ["Volunteer Experience", "Over 120 hours of community service including city clean-ups, non-profit outreach, and fundraising initiatives"],
-        ["Certifications", "Anthropic Claude 101 & AI Fluency; Forage - JP Morgan Investment Banking Job Simulation; London Business School - Fundamentals of Financial Analysis Certification"],
+        ["Technical Skills", "Microsoft Office Associate Certification in Excel, PowerPoint, and Word; User-Generated Content (UGC) & Social Media Content Creation; Google Workspace"],
+        ["Languages", "English (Native), Russian (Proficient)"],
+        ["Volunteer Experience", "120+ hours of community service, including city cleanups, nonprofit outreach, and fundraising initiatives"],
+        ["Certifications", "Anthropic Claude 101 & AI Fluency; J.P. Morgan Investment Banking Job Simulation (Forage); Fundamentals of Financial Analysis (London Business School)"],
+        ["Interests", "Making music, social media industry, startup culture, travel"],
       ] },
     ],
     // Extra section on the site only (not in the PDF): the full skills list from LinkedIn.
