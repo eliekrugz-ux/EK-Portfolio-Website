@@ -41,10 +41,10 @@ window.SITE = {
       { platform: "TikTok", handle: "@eliemmos", role: "Personal", url: "https://www.tiktok.com/@eliemmos", avatar: "avatars/profile.jpg",
         followers: 313, posts: 3, views: 137379, likes: 18924, comments: 224, shares: 3218, saves: 817 },
       // Whole account, 10 reels: views 2251 + 2055 + 4007 + 1183 + 711 + 874 + 1494 + 3052 + 706 + 2282; likes 85 + 40 + 131 + 61 + 47 + 51 + 48 + 107 + 41 + 107;
-      // comments 16 + 9 + 4 + 8 + 2 + 6 + 10 + 12. From Elie, 2026-11-04. Shares are from 2026-10-22 (27 + 16 + 16).
+      // comments 16 + 9 + 4 + 8 + 2 + 6 + 10 + 12. From Elie, 2026-11-04. Shares + reposts: 12 + 9 + 8 + 34 + 5 + 6 + 7 + 5 + 16 + 23 + 7 + 13.
       // Views also include the deleted Onsen Retreat reel (3,565).
       { platform: "Instagram", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.instagram.com/eliemmos.mp4/", avatar: "avatars/profile.jpg",
-        followers: 98, posts: 10, views: 22180, likes: 718, comments: 67, shares: 59 },
+        followers: 98, posts: 10, views: 22180, likes: 718, comments: 67, shares: 145 },
       // Flip UGC lives here for now; the Flip brand card shows the same videos.
       { platform: "TikTok", handle: "@eliemmos.mp4", role: "UGC & professional", url: "https://www.tiktok.com/@eliemmos.mp4", avatar: "avatars/profile.jpg",
         followers: 1, posts: 2, views: 268, likes: 3, comments: 0, shares: 0, saves: 0 },
