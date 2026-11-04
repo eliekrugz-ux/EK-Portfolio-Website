@@ -87,7 +87,7 @@ window.SITE = {
       ["Lifestyle & fashion posts", "Product placement in everyday NYC, travel and outfit content."],
     ],
     elsewhere: [
-      { name: "LinkedIn", handle: "elie-krugolets · 413 followers", url: "https://www.linkedin.com/in/elie-krugolets-288738335", blurb: "Career updates, wins, and what I'm building." },
+      { name: "LinkedIn", handle: "elie-krugolets · 483 followers", url: "https://www.linkedin.com/in/elie-krugolets-288738335", blurb: "Career updates, wins, and what I'm building." },
       { name: "GitHub", handle: "eliekrugz-ux", url: "https://github.com/eliekrugz-ux", blurb: "The code behind Forge and my other projects." },
     ],
   },
