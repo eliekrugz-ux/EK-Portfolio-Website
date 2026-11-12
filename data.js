@@ -127,6 +127,7 @@ window.SITE = {
 
   // tags: build · finance · lead · school · work · award · travel · life
   timeline: [
+    { date: "10.26", text: "Selected as AWS Student Builder Group Leader at Baruch", tags: ["lead", "build", "school"], detail: "Leading Baruch's chapter of AWS Student Builder Groups, building a student community that learns cloud and AI skills through hands-on projects." },
     { date: "09.26", text: "Becomes a Scholars of Finance member at Baruch", tags: ["finance", "lead", "school"], detail: "Completing an 8-week Leadership Development Program on personal values, ethical decision making and leadership in finance, plus weekly workshops on technical finance, career readiness and networking." },
     { date: "09.26", text: "Becomes a Scholars of Finance candidate at Baruch", tags: ["finance", "school"] },
     { date: "09.26", text: "Takes Forge to campus: street interviews, posters, carousels", tags: ["build"], detail: "Got Forge's first users in its opening week through street interviews at NYC colleges and organic content. I designed the whole launch kit myself: posters with QR codes, an Instagram carousel, and LinkedIn and story graphics." },
