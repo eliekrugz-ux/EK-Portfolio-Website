@@ -250,7 +250,7 @@ window.SITE = {
         { org: "Forge – AI-Powered Networking Platform (forgenetwork.app)", where: "Remote", role: "Solo Developer – Founder", when: "Aug 2026 – Sep 2026", points: [
           "Designed and shipped a full-stack, AI-powered personal networking platform independently using Anthropic's Claude Code",
           "Built AI features that rank a user's own contacts by relevance to a goal and draft personalized outreach",
-          "Drove early adoption through organic content marketing and on-campus street interviews across NYC colleges, acquiring the platform's first users within its opening week",
+          "Acquired first users within the opening week through organic content and on-campus street interviews across NYC colleges",
         ] },
         { org: "Signlr – AI-Powered Trading Signals Platform (signlr.app)", where: "Remote", role: "Solo Developer – Founder", when: "May 2026 – Aug 2026", points: [
           "Built and shipped a full-stack fintech SaaS product independently using Anthropic's Claude Code, handling all architecture",
@@ -259,8 +259,11 @@ window.SITE = {
         ] },
       ] },
       { title: "Leadership Experience", items: [
+        { org: "AWS Student Builder Groups, Baruch College", where: "New York, NY", role: "Student Builder Group Leader", when: "Oct 2026 – Present", points: [
+          "Selected to lead Baruch's chapter, building a student community that learns cloud and AI skills through hands-on projects",
+        ] },
         { org: "Scholars of Finance, Baruch Chapter", where: "New York, NY", role: "Member", when: "Sep 2026 – Present", points: [
-          "Completing an 8-week Leadership Development Program, meeting weekly to examine personal values, ethical decision making, and leadership in finance",
+          "Completing an 8-week Leadership Development Program on personal values, ethical decision making, and leadership in finance",
           "Attend weekly professional workshops covering technical finance topics, career readiness, and networking strategy",
         ] },
         { org: "Virtual Enterprise International, Edward R. Murrow Chapter", where: "Brooklyn, NY", role: "Chief Operating Officer", when: "Sep 2025 – Jun 2026", points: [
@@ -270,8 +273,7 @@ window.SITE = {
         ] },
         { org: "Key Club International, Edward R. Murrow Chapter", where: "Brooklyn, NY", role: "President/Volunteer", when: "Sep 2022 – Jun 2026", points: [
           "Led and organized 8+ community service projects and club activities per month",
-          "Managed and planned meeting agendas for 80+ participating members",
-          "Oversaw club operations, including 3+ monthly executive board meetings and member outreach",
+          "Managed meeting agendas for 80+ members and oversaw 3+ monthly executive board meetings and member outreach",
         ] },
       ] },
       { title: "Professional Experience", items: [
