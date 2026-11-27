@@ -127,6 +127,8 @@ window.SITE = {
 
   // tags: build · finance · lead · school · work · award · travel · life
   timeline: [
+    { date: "11.26", text: "Joins Todd as a GTM & Finance intern", tags: ["work"], detail: "Supporting go-to-market and finance at Todd (Todd Agriscience), a deep-tech agriculture startup offering farm sustainability management SaaS. I shadow farmer interviews and turn them into stories for LinkedIn and the company website.", link: "https://toddagriscience.com" },
+    { date: "11.26", text: "Starts GTM research at Recurra AI", tags: ["work"], detail: "Researching new customer acquisition channels beyond cold email for a startup offering managed AI sales agents, and designing an AI voice agent campaign experiment." },
     { date: "10.26", text: "Selected as AWS Student Builder Group Leader at Baruch", tags: ["lead", "build", "school"], detail: "Leading Baruch's chapter of AWS Student Builder Groups, building a student community that learns cloud and AI skills through hands-on projects." },
     { date: "09.26", text: "Becomes a Scholars of Finance member at Baruch", tags: ["finance", "lead", "school"], detail: "Completing an 8-week Leadership Development Program on personal values, ethical decision making and leadership in finance, plus weekly workshops on technical finance, career readiness and networking." },
     { date: "09.26", text: "Becomes a Scholars of Finance candidate at Baruch", tags: ["finance", "school"] },
@@ -247,16 +249,22 @@ window.SITE = {
         { org: "Edward R. Murrow High School", where: "Brooklyn, NY", role: "Murrow CTE Entrepreneurship & Murrow Music Institute", when: "Sep 2022 – Jun 2026",
           lines: ["Cumulative GPA: 95.08 | Honors: ERM First Honors Award Recipient; AP Scholar Award Recipient; Municipal Credit Union Scholar"] },
       ] },
-      { title: "Technical Projects", items: [
-        { org: "Forge – AI-Powered Networking Platform (forgenetwork.app)", where: "Remote", role: "Solo Developer – Founder", when: "Aug 2026 – Sep 2026", points: [
-          "Designed and shipped a full-stack, AI-powered personal networking platform independently using Anthropic's Claude Code",
-          "Built AI features that rank a user's own contacts by relevance to a goal and draft personalized outreach",
-          "Acquired first users within the opening week through organic content and on-campus street interviews across NYC colleges",
+      { title: "Professional Experience", items: [
+        { org: "Recurra AI", where: "Remote", role: "GTM Research", when: "Nov 2026 – Present", points: [
+          "Research and propose new customer acquisition channels beyond cold email for a startup offering managed AI sales agents",
+          "Designed an AI voice agent campaign experiment, using AI tools to study competitors and set audience, budget, and metrics",
         ] },
-        { org: "Signlr – AI-Powered Trading Signals Platform (signlr.app)", where: "Remote", role: "Solo Developer – Founder", when: "May 2026 – Aug 2026", points: [
-          "Built and shipped a full-stack fintech SaaS product independently using Anthropic's Claude Code, handling all architecture",
-          "Incorporated quantitative indicators derived from OpenYield and Alpaca's APIs to generate AI-assisted trade plans for traders",
-          "Integrated market data to power a live stock screener and implemented subscription billing and user authentication",
+        { org: "Todd Agriscience (Todd)", where: "Remote", role: "GTM & Finance Intern", when: "Nov 2026 – Present", points: [
+          "Support go to market and finance initiatives for a deep tech agriculture startup offering farm sustainability management SaaS",
+          "Shadow farmer interviews and draft and edit their stories for LinkedIn and the company website to drive brand awareness",
+        ] },
+        { org: "Law Offices of Nataliya Borushchak, PC", where: "Brooklyn, NY", role: "Legal Clerk", when: "May 2026 – Present", points: [
+          "File and organize both physical and digital case documents, including no-fault and trip-and-fall personal injury claims",
+          "Gain hands-on exposure to the personal injury settlement process, from initial claim filing through settlement and resolution",
+        ] },
+        { org: "BullTaxAccountants – Industry Scholar Program", where: "Brooklyn, NY", role: "Marketing & Social Media Intern", when: "Oct 2025 – Dec 2025", points: [
+          "Conducted market research and created weekly social media content to strengthen firm visibility and audience engagement",
+          "Managed 5+ posts per week across platforms, aligning content with firm messaging and seasonal tax campaigns",
         ] },
       ] },
       { title: "Leadership Experience", items: [
@@ -264,7 +272,7 @@ window.SITE = {
           "Selected to lead Baruch's chapter, building a student community that learns cloud and AI skills through hands-on projects",
         ] },
         { org: "Scholars of Finance, Baruch Chapter", where: "New York, NY", role: "Member", when: "Sep 2026 – Present", points: [
-          "Completing an 8-week Leadership Development Program on personal values, ethical decision making, and leadership in finance",
+          "Completing an 8-week Leadership Development Program on values, ethical decision making, and leadership in finance",
           "Attend weekly professional workshops covering technical finance topics, career readiness, and networking strategy",
         ] },
         { org: "Virtual Enterprise International, Edward R. Murrow Chapter", where: "Brooklyn, NY", role: "Chief Operating Officer", when: "Sep 2025 – Jun 2026", points: [
@@ -277,20 +285,15 @@ window.SITE = {
           "Managed meeting agendas for 80+ members and oversaw 3+ monthly executive board meetings and member outreach",
         ] },
       ] },
-      { title: "Professional Experience", items: [
-        { org: "Law Offices of Nataliya Borushchak, PC", where: "Brooklyn, NY", role: "Legal Clerk", when: "May 2026 – Present", points: [
-          "File and organize both physical and digital case documents, including no-fault and trip-and-fall personal injury claims",
-          "Gain hands-on exposure to the personal injury settlement process, from initial claim filing through settlement and resolution",
+      { title: "Technical Projects", items: [
+        { org: "Forge – AI-Powered Networking Platform (forgenetwork.app)", where: "Remote", role: "Solo Developer – Founder", when: "Aug 2026 – Sep 2026", points: [
+          "Designed and shipped a full-stack, AI-powered personal networking platform independently using Anthropic's Claude Code",
+          "Built AI features that rank a user's own contacts by relevance to a goal and draft personalized outreach",
+          "Acquired first users within the opening week through organic content and on-campus street interviews across NYC colleges",
         ] },
-        { org: "BullTaxAccountants – Industry Scholar Program", where: "Brooklyn, NY", role: "Marketing & Social Media Intern", when: "Oct 2025 – Dec 2025", points: [
-          "Conducted market research and created weekly social media content to strengthen firm visibility and audience engagement",
-          "Managed 5+ posts per week across platforms, aligning content with firm messaging and seasonal tax campaigns",
-          "Analyzed engagement trends and competitor strategies to refine posting approach and improve reach",
-        ] },
-        { org: "The TJX Companies, Inc.", where: "Brooklyn, NY", role: "Sales Associate", when: "Jul 2025 – Nov 2025", points: [
-          "Operated the POS system accurately for cash, credit, and return transactions in line with company policies",
-          "Processed up to $5,000 in sales per shift, ensuring accuracy and efficiency at the register",
-          "Balanced cash drawers and monitored discrepancies, contributing to loss prevention and financial accountability across the store",
+        { org: "Signlr – AI-Powered Trading Signals Platform (signlr.app)", where: "Remote", role: "Solo Developer – Founder", when: "May 2026 – Aug 2026", points: [
+          "Built and shipped a full-stack fintech SaaS product independently using Anthropic's Claude Code, handling all architecture",
+          "Integrated OpenYield and Alpaca APIs to power AI-assisted trade plans, a live stock screener, and subscription billing",
         ] },
       ] },
       { title: "Additional Information", info: [
