@@ -199,11 +199,12 @@
           <div><b>${compact(REACH.views)}+</b><span>Content views</span></div>
           <div title="${esc(interactionMix)}"><b>${compact(REACH.interactions)}+</b><span>Interactions</span></div>
           <p class="mk-mix">${esc(interactionMix)}</p>
+          <p class="mk-mix">These numbers aren't live. I update them by hand, so the real counts are likely higher (last updated ${esc(K.statsAsOf)}).</p>
           <a class="mk-cta" href="${esc(mailto)}">Work with me →</a>
         </div>
       </section>
 
-      <div class="mk-h" data-reveal><h2>Platforms</h2><span>Stats as of ${esc(K.statsAsOf)}</span></div>
+      <div class="mk-h" data-reveal><h2>Platforms</h2><span>Not live · updated by hand, last ${esc(K.statsAsOf)}</span></div>
       <div class="mk-platforms">${K.accounts.map(a => `
         <a class="pcard p-${a.platform.toLowerCase()}" ${ext(a.url)} data-reveal>
           <div class="pcard-top">${icon(a.platform)}<span>${esc(a.platform)}</span><em>${esc(a.role)}</em></div>
