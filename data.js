@@ -16,7 +16,7 @@ window.SITE = {
 
   // Short links in the header. A platform with no url stays hidden.
   socials: [
-    { label: "IN", name: "LinkedIn", url: "https://www.linkedin.com/in/elie-krugolets-288738335" },
+    { label: "IN", name: "LinkedIn", url: "https://www.linkedin.com/in/elie-krugolets" },
     { label: "IG", name: "Instagram", url: "https://www.instagram.com/eliemmos/" },
     { label: "TT", name: "TikTok", url: "https://www.tiktok.com/@eliemmos" },
     { label: "GH", name: "GitHub", url: "https://github.com/eliekrugz-ux" },
@@ -87,16 +87,16 @@ window.SITE = {
       ["Lifestyle & fashion posts", "Product placement in everyday NYC, travel and outfit content."],
     ],
     elsewhere: [
-      { name: "LinkedIn", handle: "elie-krugolets · 483 followers", url: "https://www.linkedin.com/in/elie-krugolets-288738335", blurb: "Career updates, wins, and what I'm building." },
+      { name: "LinkedIn", handle: "elie-krugolets · 483 followers", url: "https://www.linkedin.com/in/elie-krugolets", blurb: "Career updates, wins, and what I'm building." },
       { name: "GitHub", handle: "eliekrugz-ux", url: "https://github.com/eliekrugz-ux", blurb: "The code behind Forge and my other projects." },
     ],
   },
 
   // Recent posts for the Socials page, newest first. Stats from Elie's LinkedIn screenshot, 2026-10-10.
   posts: [
-    { date: "09.26.26", platform: "LinkedIn", url: "https://www.linkedin.com/in/elie-krugolets-288738335/recent-activity/all/", text: "I built a portfolio website to showcase my work and lay out where I'm headed.", stats: "469 impressions · 18 reactions · 1 comment" },
-    { date: "09.22.26", platform: "LinkedIn", url: "https://www.linkedin.com/in/elie-krugolets-288738335/recent-activity/all/", text: "Two weeks ago I launched forgenetwork.app, then tried to market it with zero audience. Here's what happened.", stats: "796 impressions · 22 reactions · 8 comments" },
-    { date: "09.08.26", platform: "LinkedIn", url: "https://www.linkedin.com/in/elie-krugolets-288738335/recent-activity/all/", text: "This past year I went to a lot of mixers full of creators, builders and execs. Why I built Forge.", stats: "1,486 impressions · 27 reactions · 15 comments · 1 repost" },
+    { date: "09.26.26", platform: "LinkedIn", url: "https://www.linkedin.com/in/elie-krugolets/recent-activity/all/", text: "I built a portfolio website to showcase my work and lay out where I'm headed.", stats: "469 impressions · 18 reactions · 1 comment" },
+    { date: "09.22.26", platform: "LinkedIn", url: "https://www.linkedin.com/in/elie-krugolets/recent-activity/all/", text: "Two weeks ago I launched forgenetwork.app, then tried to market it with zero audience. Here's what happened.", stats: "796 impressions · 22 reactions · 8 comments" },
+    { date: "09.08.26", platform: "LinkedIn", url: "https://www.linkedin.com/in/elie-krugolets/recent-activity/all/", text: "This past year I went to a lot of mixers full of creators, builders and execs. Why I built Forge.", stats: "1,486 impressions · 27 reactions · 15 comments · 1 repost" },
     { date: "06.17.26", platform: "LinkedIn", url: "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7473142007708856320", text: "Selected as an MCU Foundation Scholar, a scholarship supporting my next chapter at Baruch." },
     { date: "06.11.26", platform: "LinkedIn", url: "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7470643894599258112", text: "Looking back on my year as Key Club President at Murrow: the Sip N' Paint fundraiser with eight schools, and the Leadership Training Conference in Albany." },
     { date: "02.15.26", platform: "LinkedIn", url: "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7428619708007931904", text: "STRYDE, Inc. took 1st place at the Virtual Enterprise Citywide Business Plan Competition. Proud to serve as COO of this team." },
